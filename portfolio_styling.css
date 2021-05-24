@@ -1,0 +1,97 @@
+header {
+    width: 100%;
+    height: 100vh;
+    background: url("imgs/port_wallpaper.jpg");
+    background-size: cover;
+}
+
+.navbar a {
+    background: rgba(0, 0, 0, 0);
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.navbar a:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #191F45;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.navbar a:hover, .navbar:focus, .navbar:active {
+    color: white;
+}
+
+.navbar a:hover:before, .navbar a:focus:before, .navbar a:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+.navbar a {
+    color: lime !important;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: white !important;
+}
+
+.R h1{
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    font-size: 500%;
+}
+
+.i1 h1{
+    position: absolute;
+    left: 8%;
+    top: 8.5%;
+    font-size: 333%;
+}
+
+.l1 h1{
+    position: absolute;
+    left: 9%;
+    top: 9.5%;
+    font-size: 333%;
+}
+
+.e1 h1{
+    position: absolute;
+    left: 11%;
+    top: 11%;
+}
+
+.y h1{
+    position: absolute;
+    left: 13%;
+    top: 13%;
+}
+
+
+
